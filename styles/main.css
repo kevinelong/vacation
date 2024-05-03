@@ -1,5 +1,5 @@
 body {
-    font-size: 1.5vh;
+    font-size: 100%;
 }
 
 footer {
@@ -36,6 +36,17 @@ label {
     display: block;
 }
 
+input[type="number"],
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+    display: block;
+}
+input[type="radio"],
+input[type="chekbox"]{
+    margin-right: 0.25rem;
+}
+
 #output,
 button {
     width: 100%;
@@ -46,7 +57,7 @@ button {
 
 #output {
     border: 1px solid black;
-    position: fixed;
+    position: absolute;
     left: 51vw;
     top: 9vh;
     background-color: white;
