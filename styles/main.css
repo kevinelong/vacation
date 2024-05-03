@@ -1,13 +1,23 @@
-body{
-    font-size: 1.25vh;
+body {
+    font-size: 1.5vh;
 }
-fieldset{
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+fieldset {
     border: 1px solid black;
-    width: 37vh;
+    width: 49vw;
     padding: 1rem;
     margin: auto;
     border-radius: 2rem;
+    position: absolute;
+    left: 1vw;
+    top: 9vh;
 }
+
 legend {
     float: none;
     width: auto;
@@ -16,28 +26,43 @@ legend {
     font-size: 1.5vh;
     line-height: inherit;
     text-align: center;
-  }
-input{
+}
+
+input {
     margin-left: 1rem
 }
+
+label {
+    display: block;
+}
+
 #output,
-button{
+button {
     width: 100%;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     margin-top: 0.5rem;
 }
-#output{
+
+#output {
     border: 1px solid black;
+    position: fixed;
+    left: 51vw;
+    top: 9vh;
+    background-color: white;
+    width: 48vw;
+    font-family: 'Courier New', Courier, monospace;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
 }
-nav a{
+
+nav a {
     display: inline-block;
     background-color: darkgreen;
     padding: 0.5rem 1rem;

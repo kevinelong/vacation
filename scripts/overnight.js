@@ -46,24 +46,27 @@ document.addEventListener("DOMContentLoaded", ()=>{
         total = nights * rate;
         const discountAmount = total * discount;
         const discountedTotal = total - discountAmount;
+        const taxes = discountedTotal * .12
+        const withTaxes = discountedTotal + taxes;
 
         const text = `
-        Name: ${name}
-        Email: ${email}
-        Date: ${checkInDate.toLocaleDateString()}
-        Is Peak Season: ${peakSeason}
-        Nights: ${nights}
-        Room: ${room}
-        Adults: ${adults}
-        Children: ${children}
+            Name: ${name}
+            Email: ${email}
+            Date: ${checkInDate.toLocaleDateString()}
+            Is Peak Season: ${peakSeason}
+            Nights: ${nights}
+            Room: ${room}
+            Adults: ${adults}
+            Children: ${children}
 
-        SubTotal: ${currency(total)}
+            SubTotal: ${currency(total)}
 
-        Discount Percent: ${percent(discount)}
-        Discount Amount: ${currency(discountAmount)}
+            Discount Percent: ${percent(discount)}
+            Discount Amount: ${currency(discountAmount)}
 
-        Discounted Total: ${currency(discountedTotal)}
-        
+            Discounted Total: ${currency(discountedTotal)}
+            Tax: ${currency(taxes)} (12%)
+            With Tax: ${currency(withTaxes)}
         `;
         output.innerText = text;
     });
