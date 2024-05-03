@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", ()=>{
-
+debugger
     commonNavigation.innerHTML = `
     LOGO
     <a href="./index.html">HOME</a>
