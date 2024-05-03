@@ -1,0 +1,38 @@
+body{
+    font-size: 2vh;
+}
+fieldset{
+    border: 1px solid black;
+    width: 37vh;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 2rem;
+}
+input{
+    margin-left: 1rem
+}
+#output,
+button{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+#output{
+    border: 1px solid black;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+nav a{
+    display: inline-block;
+    background-color: darkgreen;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: goldenrod;
+    text-decoration: none;
+}
